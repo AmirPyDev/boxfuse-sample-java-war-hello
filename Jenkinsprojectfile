@@ -32,7 +32,7 @@ pipeline {
                 expression { params.BRANCH_NAME == 'fe/qa' }
             }
             steps {
-                deployToTomcat('13.233.198.62', 'kalpana', 'kalpana', 'http://13.233.198.62:8080/manager/text', '/boxfuse-sample-java-war-hello', 'QA')
+                deployToTomcat('3.28.239.138', 'kalpana', 'kalpana', 'http://3.28.239.138:8080/manager/text', '/boxfuse-sample-java-war-hello', 'QA')
             }
         }
         stage("Deploy to Prod") {
