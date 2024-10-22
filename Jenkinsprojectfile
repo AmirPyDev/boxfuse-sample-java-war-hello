@@ -27,7 +27,7 @@ pipeline {
                 deployToTomcat('13.232.197.1', 'kalpana', 'kalpana', 'http://13.232.197.1:8080/manager/text', '/boxfuse-sample-java-war-hello', 'Dev')
             }
         }
-        stage("Deploy to QA") {
+        stage("Deploy to Staging") {
             when {
                 expression { params.BRANCH_NAME == 'fe/qa' }
             }
